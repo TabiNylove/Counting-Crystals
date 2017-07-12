@@ -13,6 +13,8 @@ $(document).ready(function(){
 //RANDOM NUMBER
 
 // for the top half of the randomNum div, set a random number between 19 and 120
+// (if this is in a function will it work?)
+	
 	randomNum = Math.floor(Math.random() * (120 - 19) + 19);
 
 		// show it in console
@@ -69,8 +71,7 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Win!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 
 				// if user's number is greater than random number, add 1 point to wins in html
 				} else if (userNum > randomNum) {
@@ -81,8 +82,7 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Lose!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 				}
 
 		})
@@ -114,8 +114,7 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Win!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 
 				// if user's number is greater than random number, add 1 point to wins in html
 				} else if (userNum > randomNum) {
@@ -126,8 +125,7 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Lose!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 				}
 		})
 
@@ -158,8 +156,7 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Win!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 
 				// if user's number is greater than random number, add 1 point to wins in html
 				} else if (userNum > randomNum) {
@@ -170,8 +167,7 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Lose!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 				}
 		})
 
@@ -202,8 +198,7 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Win!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 
 				// if user's number is greater than random number, add 1 point to wins in html
 				} else if (userNum > randomNum) {
@@ -214,11 +209,20 @@ same number for all buttons. (i.e. don't use '.btn' instead of '#gem1', ect.)---
 						alert("You Lose!");
 
 						// reset buttons and userNum 
-						userNum = 0;
-						gem1(); gem2(); gem3(); gem4();
+						reset();
 				}
 			})
 //===============================================================================
 
+// RESET
+
+function reset() {
+	// reset buttons and userNum 
+		userNum = 0;
+		randomNum = Math.floor(Math.random() * (120 - 19) + 19);
+			$('#randomNum').html(randomNum);
+		gem1(); gem2(); gem3(); gem4();
+
+}
 
 });
