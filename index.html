@@ -8,10 +8,15 @@
 </head>
 <body>
 <!-- jumbotron counting crystals -->
-
-
-	<div class="container">
+	<div class="jumbotron text-center">
+	  <div class="container">
+	    <h1>Counting Crystals</h1>
+	    <p class="lead text-center">Click a gem to add its value together.<br> 
+	    If the result equals the number provided, you win.</p>
+	  </div>
+	</div>
 <!-- holds the number to guess and the user's guess -->
+	<div class="container">
 		<div id="guessDiv" class="row">
 			<div class="col-lg-5">
 				<h2 id="randomNum"></h2>
@@ -20,8 +25,8 @@
 			</div>
 <!-- wins and losses div -->
 			<div id="resultDiv" class="col-lg-3">
-				<p id="wins" class="results"></p>
-				<p id="losses" class="results"></p>
+				<p id="wins" class="results">Wins: </p>
+				<p id="losses" class="results">Losses: </p>
 			</div>
 		</div>
 <!-- row of button gems -->

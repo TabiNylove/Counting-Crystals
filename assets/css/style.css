@@ -1,9 +1,28 @@
 body {
-	background-color: pink;
+
 }
-#randomNum {
+
+.jumbotron {
+	background-color: rgb(255, 221, 221);
+}
+
+#guessDiv {
+	background-color: rgb(216, 251, 255);
 	text-align: center;
-	font-size: 5em;
+	margin-bottom: 25px;
+}
+
+#resultDiv {
+	background-color: rgb(216, 251, 255);
+	margin-left: 20px;
+}
+
+#randomNum {
+	font-size: 4em;
+}
+
+#userNum {
+	font-size: 4em;
 }
 
 .btn {
@@ -14,3 +33,4 @@ body {
 	height: 100px;
 	width: 100px;
 }
+
