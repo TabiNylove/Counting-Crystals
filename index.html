@@ -3,10 +3,49 @@
 <head>
 	<title>Counting Crystals</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="bootstrap-3/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<!-- jumbotron counting crystals -->
 
-</body>
+
+	<div class="container">
+<!-- holds the number to guess and the user's guess -->
+		<div id="guessDiv" class="row">
+			<div class="col-lg-5">
+				<h2 id="randomNum"></h2>
+				<hr>
+				<h2 id="userNum"></h2>
+			</div>
+<!-- wins and losses div -->
+			<div id="resultDiv" class="col-lg-3">
+				<p id="wins" class="results"></p>
+				<p id="losses" class="results"></p>
+			</div>
+		</div>
+<!-- row of button gems -->
+		<div class="row">
+			<div class="col-lg-7">
+				<button id="gem1" class="btn btn-primary">
+					<span><img class="gem" src="assets/images/blue.jpg" alt="blue"></span>
+				</button>
+				<button id="gem2" class="btn btn-primary">
+					<span><img class="gem" src="assets/images/red.jpg" alt="red"></span>
+				</button>
+				<button id="gem3" class="btn btn-primary">
+					<span><img class="gem" src="assets/images/green.jpg" alt="green"></span>
+				</button>
+				<button id="gem4" class="btn btn-primary">
+					<span><img class="gem" src="assets/images/yellow.jpg" alt="yellow"></span>
+				</button>
+		</div>
+	</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 <script src="assets/javascript/game.js"></script>
+</body>
 </html>

@@ -1,3 +1,16 @@
 body {
 	background-color: pink;
 }
+#randomNum {
+	text-align: center;
+	font-size: 5em;
+}
+
+.btn {
+	background-color: white;
+}
+
+.gem {
+	height: 100px;
+	width: 100px;
+}
