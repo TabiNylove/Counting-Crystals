@@ -43,7 +43,6 @@ function reset() {
 		userNum = 0;
 		randomNum = Math.floor(Math.random() * (120 - 19) + 19);
 			$('#randomNum').html(randomNum);
-		gem1(); gem2(); gem3(); gem4();
 
 }
 //===============================================================================
@@ -88,7 +87,7 @@ function reset() {
 			gemButtons[i].setAttribute("value", randomValue);
 	}
 	
-	
+
 	// on click, parse the random value and add it to 'userNum'
 	$(".btn").on("click", function gem1() {
 			// parseInt the value
